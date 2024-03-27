@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Meta tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title -->
+      <title>Tailwind By Mattias</title>
+      <!-- External stylesheet -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/stylesTailwind.css">
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.4/tailwind.min.css" rel="stylesheet"/>
+
+   </head>
+   <body>
+
+      <!-- Title section -->
+      <h1 class="m-5 p-4 bg-blue-500 text-center border-solid border-2 rounded-full text-white">Apredendo TailwindCSS Com o Matias</h1>
+      <br>
+      <br>
+
+
+      <!-- Text size section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">text-size</h1>
+      <br>
+
+
+      <!-- Text examples with different sizes -->
+      <p class="m-5 text-sm ...">The quick brown fox ...</p>
+      <p class="m-5 text-base ...">The quick brown fox ...</p>
+      <p class="m-5 text-lg ...">The quick brown fox ...</p>
+      <p class="m-5 text-xl ...">The quick brown fox ...</p>
+      <p class="m-5 text-2xl ...">The quick brown fox ...</p>
+      <br>
+
+
+      <!-- Font weight section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">font-weight</h1>
+      <br>
+
+
+      <!-- Text examples with different font weights -->
+      <p class="m-5 font-light ...">The quick brown fox ...</p>
+      <p class="m-5 font-normal ...">The quick brown fox ...</p>
+      <p class="m-5 font-medium ...">The quick brown fox ...</p>
+      <p class="m-5 font-semibold ...">The quick brown fox ...</p>
+      <p class="m-5 font-bold ...">The quick brown fox ...</p>
+
+
+      <!-- Text alignment section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">align-text</h1>
+      <br>
+
+
+      <!-- Text examples with different alignments -->
+      <p class="m-5 p-4 text-center border-solid border-2 border-red-500">Lorem ipsum dolor sit amet, consectetur ...</p>
+      <p class="m-5 p-4 text-justify border-solid border-2 border-red-500">Lorem ipsum dolor sit amet, consectetur ...</p>
+      <p class="m-5 p-4 text-right border-solid border-2 border-red-500">Lorem ipsum dolor sit amet, consectetur ...</p>
+      <p class="m-5 p-4 text-left border-solid border-2 border-red-500">Lorem ipsum dolor sit amet, consectetur ...</p>
+      <br>
+
+
+      <!-- Border section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">border</h1>
+      <br>
+
+
+      <!-- Border examples -->
+      <p class="m-5 p-4 bg-green-500 text-left border-solid border-t-4 border-red-500">border top</p>
+      <p class="m-5 p-4 bg-green-500 text-center border-solid border-l-4 border-red-500">border left</p>
+      <p class="m-5 p-4 bg-green-500 text-justify border-solid border-r-4 border-red-500">border right</p>
+      <p class="m-5 p-4 bg-green-500 text-right border-solid border-b-4 border-red-500">border bottom</p>
+      <br>
+
+
+      <!-- Rounded border examples -->
+      <p class="m-5 p-4 bg-green-500 text-center border-solid border-4 border-red-500 rounded-md">rounded sm</p>
+      <p class="m-5 p-4 bg-green-500 text-center border-solid border-4 border-red-500 rounded-full">rounded full</p>
+      <br>
+
+
+      <!-- Gradient section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">gradiente</h1>
+      <br>
+
+
+      <!-- Gradient examples -->
+      <div class="w-full h-32 bg-gradient-to-r from-pink-400 via-red-500 to-pink-500 text-center"></div>
+      <br>
+      <div class="w-full h-32 bg-gradient-to-r from-blue-200 via-purple-400 to-blue-600 text-center"></div>
+      <br>
+
+
+      <!-- Flexbox section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">flexbox</h1>
+      <br>
+      <div class="w-full h-auto bg-blue-500 flex flex-row justify-evenly items-center gap-4 p-4">
+         <div class="w-32 md:w-64 h-24 bg-black flex flex-row justify-evenly items-center">
+           <div class="w-12 h-12 bg-red-500"></div>
+         </div>
+         <div class="w-32 md:w-64 h-24 bg-black flex flex-row justify-evenly items-center gap-4">
+           <div class="w-12 h-12 bg-red-500"></div>
+         </div>
+         <div class="w-32 md:w-64 h-24 bg-black flex flex-row justify-evenly items-center">
+           <div class="w-12 h-12 bg-red-500"></div>
+         </div>
+       </div>       
+      <br>
+
+
+      <!-- Grid section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">grid</h1>
+      <br>
+
+
+      <!-- Grid example -->
+      <div class="w-full bg-blue-500 grid grid-cols-3 gap-4">
+         <div class="col-span-3 w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+         <div class="col-span-2 w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+         <div class="w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+         <div class="w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+         <div class="col-span-2 w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+         <div class="col-span-3 w-full h-24 bg-black flex flex-row justify-evenly items-center"></div>
+      </div>
+      <br>
+
+
+      <!-- Responsiveness section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">responsividade</h1>
+      <br>
+
+
+      <!-- Responsive background color -->
+      <div  class=" w-full h-32 bg-blue-500 sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-purple-500"></div>
+      <br>
+
+
+      <!-- Hover, focus, etc states section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">Estados hover, focus, etc</h1>
+      <br>
+      <div class="w-full h-auto bg-blue-500 flex flex-row justify-evenly items-center py-4">
+         <div class="w-1/4 h-24 bg-black hover:bg-white mx-2"></div>
+         <div class="w-1/4 h-24 bg-black hover:bg-white mx-2"></div>
+         <div class="w-1/4 h-24 bg-black hover:bg-white mx-2"></div>
+       </div>       
+      <br>
+
+
+      <!-- Cards section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">cards</h1>
+      <section class="p-4 w-full h-auto bg-gray-500 flex flex-col items-center justify-center gap-8">
+
+         <!-- Black card background area -->
+         <div class=" w-full md:w-1/2 h-auto bg-black rounded-lg">
+           <!-- card Title -->
+           <div class="p-4 w-full bg-gray-800 border-b border-gray-600 rounded-t-lg text-white shadow-lg">
+             <h6 class="font-semibold">header</h6>
+           </div>
+           <!-- card content -->
+           <div class="p-4 w-full bg-gray-700 text-white shadow-lg">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi atque accusamus voluptatem veritatis, totam obcaecati suscipit at temporibus corrupti nemo aut similique ex pariatur delectus, nulla libero, nobis tempora porro.</p>
+           </div>
+           <!-- card footer -->
+           <div class="p-4 w-full bg-gray-800 border-b border-gray-600 border-t border-gray-600 rounded-b-lg text-white shadow-lg">
+             <h6 class="font-semibold">footer</h6>
+           </div>
+         </div>
+       
+         <!-- White card background area -->
+         <div class="w-full md:w-1/2 h-auto bg-white rounded-lg">
+           <!-- card Title -->
+           <div class="p-4 w-full bg-gray-200 border-b border-gray-300 rounded-t-lg text-black shadow-lg">
+             <h6 class="font-semibold">header</h6>
+           </div>
+           <!-- card content -->
+           <div class="p-4 w-full bg-white text-black shadow-lg">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi atque accusamus voluptatem veritatis, totam obcaecati suscipit at temporibus corrupti nemo aut similique ex pariatur delectus, nulla libero, nobis tempora porro.</p>
+           </div>
+           <!-- card footer -->
+           <div class="p-4 w-full bg-white border-b border-gray-200 border-t border-gray-200 rounded-b-lg text-black shadow-lg">
+             <h6 class="font-semibold">footer</h6>
+           </div>
+         </div>
+       </section>       
+       
+      <br>
+
+
+      <!-- transitions section -->
+      <h1 class="m-5 p-4 bg-gray-100 text-center border-solid border-2 border-yellow-500">button + hover + transition (delay)</h1>
+      <section class="h-auto w-full flex flex-row justify-center items-center gap-4 mb-8">
+         <button class="py-1 px-2 bg-gray-700 text-white rounded-lg hover:bg-black transition delay-150 duration-300 ease-in-out ">Button A</button>
+         <button class="py-1 px-2 bg-gray-700 text-white rounded-lg hover:bg-black transition delay-300 duration-300 ease-in-out ">Button B</button>
+         <button class="py-1 px-2 bg-gray-700 text-white rounded-lg hover:bg-black transition delay-700 duration-300 ease-in-out ">Button C</button>
+      </section>
+      <br>
+
+
+      <!-- Input section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">Component Input</h1>
+      <br>
+      <section class="h-auto w-full flex flex-row justify-center items-centermb-4">
+         <input type="text" placeholder="Digite seu nome" class=" mx-4 w-full px-2 p-1 border border-gray-600 rounded-md text-sm text-gray-600 placeholder-gray-800 focus:outline-none focus:border-blue-500">
+      </section>
+      <br>
+
+
+      <!-- dropdown section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">Component Dropdown</h1>
+      <br>
+      <div class="flex justify-center items-top w-full h-64 bg-black">
+         <div class="p-10">
+            <div class="dropdown inline-block relative">
+               <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Dropdown</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                  </svg>
+               </button>
+               <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                  <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                  <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                  <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <br>
+
+      
+      <!-- Login section -->
+      <h1 class="m-5 p-4 bg-yellow-500 text-center border-solid border-2 border-yellow-500">Tela de Login</h1>
+      <br>
+      <section class="w-full min-h-screen bg-gray-200 flex justify-center items-center">
+         <div class="w-full md:w-4/5 lg:w-3/5 xl:w-2/5 py-16 max-w-md">
+             <div class="bg-white py-8 mx-4 md:mx-12 shadow-md rounded-md p-4 flex-col">
+                 <h2 class="text-xl font-bold text-center mb-8">Entrar</h2>
+                 <div class="mb-4">
+                     <label class="block text-sm text-gray-800 mb-1" for="email">E-mail:</label>
+                     <input placeholder="Digite seu e-mail" class="w-full p-2 bg-gray-50 border border-gray-500 rounded-lg placeholder-gray-600 focus:outline-none" id="email" type="text">
+                 </div>
+                 <div class="mb-6">
+                     <label class="block text-sm text-gray-800 mb-1" for="password">Senha:</label>
+                     <input placeholder="Digite sua senha" class="w-full p-2 bg-gray-50 border border-gray-500 rounded-lg placeholder-gray-600 focus:outline-none" id="password" type="password">
+                 </div>
+                 <div>
+                     <button class="w-full text-sm bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-lg">
+                         Login
+                     </button>
+                 </div>
+                 <div class="mt-4 text-center">
+                     <a class="text-sm text-gray-600 hover:underline" href="#">Esqueceu a senha?</a>
+                 </div>
+             </div>
+         </div>
+     </section>
+     
+     
+     
+   </body>
+</html>
