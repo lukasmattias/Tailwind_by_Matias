@@ -9,14 +9,54 @@
       <!-- External stylesheet -->
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/stylesTailwind.css">
-
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.4/tailwind.min.css" rel="stylesheet"/>
 
    </head>
    <body>
 
+      <!-- header section -->
+      <header class="z-3 w-full h-auto">
+         <nav class="p-4 bg-white shadow md:flex md:items-center md:justify-between fixed top-0 left-0 right-0 z-50">
+            <div class="flex justify-between items-center">
+               <span class="text-2xl font-[Poppins] cursor-pointer flex flex-row items-center gap-4">
+                  <img class="h-6 inline-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png">          tailwind
+            </span>
+         
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block" onclick="Menu(this)">
+               <ion-icon name="menu"></ion-icon>
+            </span>
+            </div>
+         
+            <ul class="md:flex md:items-center md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+               <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+               <a href="#" class="text-xl hover:text-cyan-500 duration-500">Service</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+               <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+               <a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
+            </li>
+
+            <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-black rounded-xl">
+               Get started
+            </button>
+
+            </ul>
+         </nav>
+            
+      </header>
+
+
       <!-- Title section -->
-      <h1 class="m-5 p-4 bg-blue-500 text-center border-solid border-2 rounded-full text-white">Apredendo TailwindCSS Com o Matias</h1>
+      <h1 class="m-5 mt-32 p-4 bg-blue-500 text-center border-solid border-2 rounded-full text-white">Apredendo TailwindCSS Com o Matias</h1>
       <br>
       <br>
 
@@ -256,7 +296,20 @@
          </div>
      </section>
      
-     
-     
+
+     <script>
+      // <!-- header script -->
+      function Menu(e){
+        let list = document.querySelector('ul');
+        if (e.name === 'menu') {
+          e.name = "close";
+          list.classList.add('top-[80px]', 'opacity-100');
+        } else {
+          e.name = "menu";
+          list.classList.remove('top-[80px]', 'opacity-100');
+        }
+      }
+    </script>
+
    </body>
 </html>
